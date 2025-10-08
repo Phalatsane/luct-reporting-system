@@ -12,7 +12,6 @@
 }
 
 .page-container::before {
-  content: '🌟';
   position: absolute;
   top: 15px;
   right: 5%;
@@ -21,7 +20,6 @@
 }
 
 .page-container::after {
-  content: '💖';
   position: absolute;
   bottom: 15px;
   left: 5%;
@@ -55,12 +53,10 @@ h1 {
 }
 
 h1::before {
-  content: '✨ ';
   -webkit-text-fill-color: #ff69b4;
 }
 
 h1::after {
-  content: ' ✨';
   -webkit-text-fill-color: #ff69b4;
 }
 
@@ -122,7 +118,6 @@ h3 {
 }
 
 .student-nav button::before {
-  content: '💕';
   position: absolute;
   top: -15px;
   right: -15px;
@@ -177,7 +172,6 @@ h3 {
 
 .attendance-form::before,
 .rating-form::before {
-  content: '📝';
   position: absolute;
   top: -25px;
   left: 20px;
@@ -317,7 +311,6 @@ button[type="submit"] {
 }
 
 button[type="submit"]::after {
-  content: ' 💖';
 }
 
 /* Tables - Card Grid Style */
@@ -435,7 +428,6 @@ td.absent::before {
 
 .info::before,
 .success-message::before {
-  content: '🎉 ';
   font-size: 1.5rem;
   margin-right: 0.5rem;
 }
@@ -459,7 +451,6 @@ td.absent::before {
 }
 
 .error-message::before {
-  content: '⚠️ ';
   font-size: 1.5rem;
   margin-right: 0.5rem;
 }
@@ -567,12 +558,10 @@ tr td[colspan] {
 }
 
 tr td[colspan]::before {
-  content: '🌸 ';
   font-size: 1.5rem;
 }
 
 tr td[colspan]::after {
-  content: ' 🌸';
   font-size: 1.5rem;
 }
 
@@ -587,7 +576,6 @@ tr td[colspan]::after {
 }
 
 .loading::before {
-  content: '✨ ';
   animation: spin 2s linear infinite;
   display: inline-block;
 }
