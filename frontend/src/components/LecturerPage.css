@@ -10,7 +10,7 @@
 }
 
 .page-container::before {
-  content: '🦋';
+  
   position: absolute;
   top: 30px;
   left: 3%;
@@ -20,7 +20,7 @@
 }
 
 .page-container::after {
-  content: '🌺';
+
   position: absolute;
   bottom: 30px;
   right: 3%;
@@ -60,13 +60,11 @@ h1 {
 }
 
 h1::before {
-  content: '🌸';
   -webkit-text-fill-color: #ff69b4;
   margin-right: 1rem;
 }
 
 h1::after {
-  content: '🌸';
   -webkit-text-fill-color: #ff69b4;
   margin-left: 1rem;
 }
@@ -83,7 +81,6 @@ h2 {
 }
 
 h2::before {
-  content: '🎀';
   position: absolute;
   left: 0;
   font-size: 1.8rem;
@@ -150,7 +147,6 @@ h4 {
 }
 
 .tab::after {
-  content: '💕';
   position: absolute;
   top: -12px;
   right: 15px;
@@ -222,7 +218,7 @@ h4 {
 }
 
 .class-card::before {
-  content: '📚';
+  
   position: absolute;
   top: -20px;
   right: 20px;
@@ -317,7 +313,7 @@ h4 {
 }
 
 .warning-message::before {
-  content: '⚠️ ';
+  
   font-size: 1.5rem;
   margin-right: 0.8rem;
 }
@@ -346,7 +342,7 @@ h4 {
 }
 
 .faculty-section::before {
-  content: '🎓';
+  
   position: absolute;
   top: -22px;
   left: 25px;
@@ -545,7 +541,7 @@ td.status.rejected {
 }
 
 .summary-card::before {
-  content: '📊';
+  
   position: absolute;
   top: -18px;
   right: 20px;
@@ -630,7 +626,7 @@ td.status.rejected {
 }
 
 .attendance-details .present::before {
-  content: '✓ ';
+  
   font-size: 1.3rem;
 }
 
@@ -641,7 +637,7 @@ td.status.rejected {
 }
 
 .attendance-details .absent::before {
-  content: '✗ ';
+  
   font-size: 1.3rem;
 }
 
@@ -742,7 +738,7 @@ button:disabled {
 }
 
 .success-message::before {
-  content: '🎉 ';
+  
   font-size: 1.5rem;
   margin-right: 0.8rem;
 }
@@ -765,7 +761,7 @@ button:disabled {
 }
 
 .error-message::before {
-  content: '❌ ';
+  
   font-size: 1.5rem;
   margin-right: 0.8rem;
 }
@@ -790,7 +786,7 @@ button:disabled {
 }
 
 .loading::before {
-  content: '✨ ';
+  
   font-size: 1.5rem;
   animation: spin 2s linear infinite;
   display: inline-block;
