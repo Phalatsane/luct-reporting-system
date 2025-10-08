@@ -36,3 +36,10 @@ input, select, textarea, button {
   background: rgba(237, 28, 36, 0.3);
   color: #ffffff;
 }
+h1::after,
+h2::after,
+h3::after,
+h4::after {
+  content: none !important;
+}
+
