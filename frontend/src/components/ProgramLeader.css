@@ -12,7 +12,7 @@
 }
 
 .page-container::before {
-  content: '🌟';
+
   position: absolute;
   top: 25px;
   left: 3%;
@@ -21,7 +21,6 @@
 }
 
 .page-container::after {
-  content: '🎀';
   position: absolute;
   bottom: 25px;
   right: 3%;
@@ -58,7 +57,7 @@
 }
 
 .welcome-section::before {
-  content: '✨';
+
   position: absolute;
   top: -20px;
   left: 40px;
@@ -147,7 +146,7 @@ h1 {
 
 h1::before,
 h1::after {
-  content: '💖';
+
   -webkit-text-fill-color: #f06292;
   font-size: 2.5rem;
 }
@@ -164,7 +163,6 @@ h2 {
 }
 
 h2::before {
-  content: '🌺';
   position: absolute;
   left: 0;
   font-size: 2.5rem;
@@ -271,7 +269,6 @@ h3 {
 .stream-card::before,
 .class-details-card::before,
 .lecturer-rating-card::before {
-  content: '📌';
   position: absolute;
   top: -18px;
   right: 25px;
@@ -758,7 +755,6 @@ button:active {
 }
 
 .info-note::before {
-  content: 'ℹ️ ';
   font-size: 1.3rem;
   margin-right: 0.8rem;
 }
@@ -773,7 +769,6 @@ button:active {
 }
 
 .no-data::before {
-  content: '🌸 ';
   font-size: 2rem;
   display: block;
   margin-bottom: 1rem;
