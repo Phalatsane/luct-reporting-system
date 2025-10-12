@@ -16,6 +16,14 @@ export default function Login({ setUser }) {
   const [showRegister, setShowRegister] = useState(false);
   const [role, setRole] = useState("student");
 
+  // Check URL params to show register form
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    if (params.get('register') === 'true') {
+      setShowRegister(true);
+    }
+  }, []);
+
   useEffect(() => {
     localStorage.clear();
     sessionStorage.clear();
