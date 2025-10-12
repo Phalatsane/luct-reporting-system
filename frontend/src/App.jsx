@@ -3,7 +3,9 @@ import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
+import LandingPage from "./pages/LandingPage";
 import Login from "./pages/Login";
+import Register from "./pages/Register";
 import StudentPage from "./components/StudentPage";
 import LecturerPage from "./components/LecturerPage";
 import PrincipalLecturer from "./components/PrincipalLecturer";
@@ -16,6 +18,7 @@ import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 export default function App() {
   const githubUrl = "https://github.com/Phalatsane";
   const gmailUrl = "mailto:phalatsanemolise30@gmail.com";
+  
   // ==================== USER STATE ====================
   const [user, setUser] = useState(() => {
     try {
@@ -51,16 +54,18 @@ export default function App() {
 
   // ==================== PROTECTED ROUTE ====================
   function ProtectedRoute({ user, allowedRoles, children }) {
-    if (!user) return <Navigate to="/" replace />;
-    if (!allowedRoles.includes(user.role)) return <Navigate to="/" replace />;
+    if (!user) return <Navigate to="/login" replace />;
+    if (!allowedRoles.includes(user.role)) return <Navigate to="/login" replace />;
     return children;
   }
 
   return (
     <Router>
-      {user && <Navbar setUser={logout} />}
+      <Navbar user={user} setUser={logout} />
       <Routes>
-        <Route path="/" element={<Login setUser={setUser} />} />
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/login" element={<Login setUser={setUser} />} />
+        <Route path="/register" element={<Register />} />
 
         <Route
           path="/student"
@@ -125,9 +130,9 @@ export default function App() {
           }
         />
 
-        <Route path="*" element={<Navigate to={user ? "/student" : "/"} replace />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
-       <footer className="login-footer">
+      <footer className="login-footer">
         <div className="footer-copy">
           &copy; {new Date().getFullYear()} LUCT Reporting System. All rights reserved
         </div>
@@ -137,6 +142,5 @@ export default function App() {
         </div>
       </footer>
     </Router>
-    
   );
 }
