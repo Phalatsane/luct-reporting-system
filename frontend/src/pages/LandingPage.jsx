@@ -15,8 +15,8 @@ export default function LandingPage() {
             Streamline attendance management and class reporting with our comprehensive digital solution
           </p>
           <div className="hero-buttons">
-            <Link to="/login" className="hero-btn primary">Get Started</Link>
-            <Link to="/register" className="hero-btn secondary">Create Account</Link>
+            <Link to="/login" className="hero-btn primary">Login</Link>
+            <Link to="/login?register=true" className="hero-btn secondary">Create Account</Link>
           </div>
         </div>
       </section>
@@ -108,7 +108,7 @@ export default function LandingPage() {
         <div className="cta-content">
           <h2>Ready to Get Started?</h2>
           <p>Join thousands of students and faculty using our platform</p>
-          <Link to="/register" className="cta-button">Create Your Account</Link>
+          <Link to="/login" className="cta-button">Get Started Now</Link>
         </div>
       </section>
     </div>
