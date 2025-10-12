@@ -60,11 +60,10 @@ export default function App() {
 
   return (
     <Router>
-      <Navbar user={user} setUser={logout} />
+      <Navbar setUser={logout} />
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/login" element={<Login setUser={setUser} />} />
-        <Route path="/register" element={<Register />} />
 
         <Route
           path="/student"
