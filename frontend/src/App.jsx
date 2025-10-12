@@ -5,7 +5,6 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-d
 import Navbar from "./components/Navbar";
 import LandingPage from "./pages/LandingPage";
 import Login from "./pages/Login";
-import Register from "./pages/Register";
 import StudentPage from "./components/StudentPage";
 import LecturerPage from "./components/LecturerPage";
 import PrincipalLecturer from "./components/PrincipalLecturer";
